@@ -1,0 +1,67 @@
+/* Monochrome High Contrast Theme for Rofi */
+
+* {
+    background:     #000000;
+    foreground:     #f0f0f0;
+    selected:       #ffffff;
+    active:         #cccccc;
+    urgent:         #aaaaaa;
+}
+
+window {
+    background-color: @background;
+    border:           2px;
+    border-color:     @foreground;
+    padding:          10px;
+}
+
+mainbox {
+    background-color: @background;
+}
+
+inputbar {
+    background-color: @background;
+    text-color:       @foreground;
+    padding:          10px;
+    border:           0px 0px 2px 0px;
+    border-color:     @foreground;
+}
+
+prompt {
+    background-color: @background;
+    text-color:       @foreground;
+}
+
+entry {
+    background-color: @background;
+    text-color:       @foreground;
+    placeholder-color: #666666;
+}
+
+listview {
+    background-color: @background;
+    padding:          5px 0px;
+    lines:            10;
+}
+
+element {
+    background-color: @background;
+    text-color:       @foreground;
+    padding:          8px;
+}
+
+element selected {
+    background-color: @selected;
+    text-color:       @background;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             1.2em;
+}
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"
